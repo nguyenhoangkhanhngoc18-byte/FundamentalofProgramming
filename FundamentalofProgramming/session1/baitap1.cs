@@ -63,12 +63,38 @@ namespace FundamentalofProgramming.session1
             Console.WriteLine("{0} degrees F = {1} degrees C", fah, cel);
 
             //6. to find the Size of data types
-            Console.WriteLine("--- 6. Kích thước các kiểu dữ liệu ---");
             Console.WriteLine($"size of int: {sizeof(int)} bytes");
             Console.WriteLine($"size of long long: {sizeof(long)} bytes");
             Console.WriteLine($"size of float: {sizeof(float)} bytes");
             Console.WriteLine($"size of double: {sizeof(double)} bytes");
             Console.WriteLine($"size of bool: {sizeof(bool)} bytes");
+
+            //7. to Print ASCII Value (tip: read character, print number of this char)
+            char myChar = 'a';
+            int asciiValue = (int)myChar;
+
+
+            Console.WriteLine($"Giá trị ASCII của {myChar}: " + asciiValue);
+
+            //8. to Calculate Area of Circle
+            float r = 7.5f;
+            float areaOfcircle = 3.14f * (r * r);
+            Console.WriteLine($"Diện tích của hình tròn có bán kính {r} mét là {areaOfcircle} mét vuông");
+
+
+            //9.to Calculate Area of Square
+            float canh = 5.5f;
+            float areaOfsquare = canh * canh;
+            Console.WriteLine($"Diện tích của hình vuông có cạnh {canh} mét là {areaOfsquare} mét vuông");
+
+            // 10.to convert days to years, weeks and days
+            int totalDays = 1000;
+            int years = totalDays / 365;
+            int remainingDaysAfterYears = totalDays % 365;
+            int weeks = remainingDaysAfterYears / 7;
+            int days = remainingDaysAfterYears % 7;
+            Console.WriteLine($"{totalDays} ngày bằng: {years} năm, {weeks} tuần và {days} ngày.");
+
         }
     }
 }
