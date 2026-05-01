@@ -94,7 +94,7 @@ namespace FundamentalofProgramming.session1
             int weeks = remainingDaysAfterYears / 7;
             int days = remainingDaysAfterYears % 7;
             Console.WriteLine($"{totalDays} ngày bằng: {years} năm, {weeks} tuần và {days} ngày.");
-
+            
         }
     }
 }
